@@ -4,5 +4,9 @@
 # Repo:   github.com/parkr/spiegel
 #
 
+export DEBIAN_FRONTEND=noninteractive
 sudo apt-get update
-sudo apt-get install upstart curl rsync scp tar
+sudo apt-get -q -y install python-software-properties python g++ make upstart rsync
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get -q -y install nodejs
